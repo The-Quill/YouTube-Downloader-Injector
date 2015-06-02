@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Downloader Injector!",
+  "description": "This extension injects YouTube with code to link to a YTDownloader site! Made By @The-Quill",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        	"jquery.js",
+          "myscript.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
